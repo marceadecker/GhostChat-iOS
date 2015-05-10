@@ -10,7 +10,7 @@ import UIKit
 import CoreBluetooth
 
 
-class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralManagerDelegate,CBPeripheralDelegate {
+class ViewController: UIViewController, UIScrollViewDelegate, CBPeripheralManagerDelegate, CBCentralManagerDelegate,CBPeripheralDelegate {
 
     // MARK: - Globals
     
@@ -21,6 +21,7 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
     var identifer = "My ID"
     // A newly generated UUID for Peripheral
     var uuid = NSUUID()
+
     
     
     // Chat Array
@@ -44,9 +45,11 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var myTextField: UITextField!
+    
 
     @IBAction func sendButtonPressed(sender: UIButton) {
         advertiseNewName(myTextField.text)
+        myTextField.resignFirstResponder()
 
     }
     
@@ -54,6 +57,7 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
         myCentralManager.stopScan()
         refreshArrays()
         startScanning()
+        myTextField.resignFirstResponder()
         
     }
     
@@ -62,9 +66,10 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
         super.viewDidLoad()
         advertiseNewName(myTextField.text)
         putPeripheralManagerIntoMainQueue()
-        
-
+        myTextField.resignFirstResponder()
+    
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -200,6 +205,7 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
         let theUUid = CBUUID(NSUUID: uuid)
         
         let nameString = nameField.text
+        nameField.resignFirstResponder()
         
         let dataToBeAdvertised:[String:AnyObject!] = [
             CBAdvertisementDataLocalNameKey: "Ghost \(nameString): \(passedString)",
@@ -409,16 +415,18 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, CBCentralMa
             cell.textLabel?.text = "\(cleanAndSortedArray[indexPath.row].1)" + "  \(cleanAndSortedArray[indexPath.row].2)"
             cell.detailTextLabel?.text = cleanAndSortedArray[indexPath.row].3
             
+            cell.contentView.backgroundColor = UIColor.clearColor()
+            
             return cell}
         
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0{
-            return "Chat Activity"
+            return "LIVESTREAM OF EMOJI CHAT"
         }else if section == 1{
             tableView.sectionIndexColor = UIColor.darkGrayColor()
-            return "BackGround Devices"
+            return "Background Devices"
         } else {
             return "Misc"
         }
