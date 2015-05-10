@@ -10,4 +10,6 @@
 + iOS 8.3+
 + OSX 10.10+
 + xCode 6.3+
- 
+
+# Image Credit:
++ Launch screen image background & app image background by Borkie, used under creative commons BY-NC-SA. http://b0rkie.tumblr.com/
