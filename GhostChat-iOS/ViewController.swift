@@ -1,10 +1,13 @@
 //
 //  ViewController.swift
 //  GhostChat-iOS
+//  Livestream of Emoji Chat
 //
 //  Created by GrownYoda on 4/26/15.
+//  Forked & changed to Livestream of Emoji Chat by Marcea Decker on 5/9/15.
 //  Copyright (c) 2015 yuryg. All rights reserved.
-//  I'm making an update example.
+//  Copyright (c) 2015 mdecker. All rights reserved.
+
 
 import UIKit
 import CoreBluetooth
