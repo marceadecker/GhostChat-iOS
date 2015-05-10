@@ -12,4 +12,4 @@
 + xCode 6.3+
 
 # Image Credit:
-+ Launch screen image background & app image background by Borkie, used under creative commons BY-NC-SA. http://b0rkie.tumblr.com/
+Launch screen image background & app image background by Borkie, used under creative commons BY-NC-SA. http://b0rkie.tumblr.com/
