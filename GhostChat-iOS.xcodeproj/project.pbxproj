@@ -10,7 +10,7 @@
 		327FEA4B1AFED58C00FC1C33 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 327FEA4A1AFED58C00FC1C33 /* background2.png */; };
 		327FEA4D1AFED6CC00FC1C33 /* LAUNCHLOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 327FEA4C1AFED6CC00FC1C33 /* LAUNCHLOGO.png */; };
 		32D213C31AFF9CA800BF80C6 /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D213C21AFF9CA800BF80C6 /* background1.png */; };
-		32D213C51AFF9CF300BF80C6 /* LIVESTREAM_LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D213C41AFF9CF300BF80C6 /* LIVESTREAM_LOGO.png */; };
+		32D213C91AFFABEA00BF80C6 /* LIVESTREAM_LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D213C81AFFABEA00BF80C6 /* LIVESTREAM_LOGO.png */; };
 		6C7849121AED4DD50054DBED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7849111AED4DD50054DBED /* AppDelegate.swift */; };
 		6C7849141AED4DD50054DBED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7849131AED4DD50054DBED /* ViewController.swift */; };
 		6C7849171AED4DD50054DBED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7849151AED4DD50054DBED /* Main.storyboard */; };
@@ -33,7 +33,7 @@
 		327FEA4A1AFED58C00FC1C33 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
 		327FEA4C1AFED6CC00FC1C33 /* LAUNCHLOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LAUNCHLOGO.png; sourceTree = "<group>"; };
 		32D213C21AFF9CA800BF80C6 /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1.png; sourceTree = "<group>"; };
-		32D213C41AFF9CF300BF80C6 /* LIVESTREAM_LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LIVESTREAM_LOGO.png; sourceTree = "<group>"; };
+		32D213C81AFFABEA00BF80C6 /* LIVESTREAM_LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LIVESTREAM_LOGO.png; sourceTree = "<group>"; };
 		6C78490C1AED4DD50054DBED /* GhostChat-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GhostChat-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7849101AED4DD50054DBED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C7849111AED4DD50054DBED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		6C78490E1AED4DD50054DBED /* GhostChat-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				32D213C41AFF9CF300BF80C6 /* LIVESTREAM_LOGO.png */,
+				32D213C81AFFABEA00BF80C6 /* LIVESTREAM_LOGO.png */,
 				32D213C21AFF9CA800BF80C6 /* background1.png */,
 				327FEA4A1AFED58C00FC1C33 /* background2.png */,
 				327FEA4C1AFED6CC00FC1C33 /* LAUNCHLOGO.png */,
@@ -207,7 +207,7 @@
 				327FEA4B1AFED58C00FC1C33 /* background2.png in Resources */,
 				32D213C31AFF9CA800BF80C6 /* background1.png in Resources */,
 				6C7849171AED4DD50054DBED /* Main.storyboard in Resources */,
-				32D213C51AFF9CF300BF80C6 /* LIVESTREAM_LOGO.png in Resources */,
+				32D213C91AFFABEA00BF80C6 /* LIVESTREAM_LOGO.png in Resources */,
 				6C78491C1AED4DD50054DBED /* LaunchScreen.xib in Resources */,
 				327FEA4D1AFED6CC00FC1C33 /* LAUNCHLOGO.png in Resources */,
 				6C7849191AED4DD50054DBED /* Images.xcassets in Resources */,
