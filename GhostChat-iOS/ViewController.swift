@@ -13,7 +13,7 @@ import UIKit
 import CoreBluetooth
 
 
-class ViewController: UIViewController, UIScrollViewDelegate, CBPeripheralManagerDelegate, CBCentralManagerDelegate,CBPeripheralDelegate {
+class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegate, CBPeripheralManagerDelegate, CBCentralManagerDelegate,CBPeripheralDelegate {
 
     // MARK: - Globals
     
@@ -49,6 +49,10 @@ class ViewController: UIViewController, UIScrollViewDelegate, CBPeripheralManage
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var myTextField: UITextField!
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        myTextField.resignFirstResponder()
+        return false
+    }
 
     @IBAction func sendButtonPressed(sender: UIButton) {
         advertiseNewName(myTextField.text)
