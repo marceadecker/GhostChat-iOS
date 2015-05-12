@@ -215,7 +215,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegat
         nameField.resignFirstResponder()
         
         let dataToBeAdvertised:[String:AnyObject!] = [
-            CBAdvertisementDataLocalNameKey: "Ghost \(nameString): \(passedString)",
+            CBAdvertisementDataLocalNameKey: "\(nameString): \(passedString)",
             CBAdvertisementDataManufacturerDataKey: "Hello anufacturerDataKey",
             CBAdvertisementDataServiceUUIDsKey: [theUUid],]
         
@@ -432,7 +432,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegat
         if section == 0{
             return "LIVESTREAM OF EMOJI CHAT"
         }else if section == 1{
-            tableView.sectionIndexColor = UIColor.darkGrayColor()
+            tableView.sectionIndexColor = UIColor.grayColor()
             return "Background Devices"
         } else {
             return "Misc"
