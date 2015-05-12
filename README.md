@@ -1,4 +1,4 @@
-## ![ScreenShot](https://github.com/marceadecker/GhostChat-iOS/blob/master/IMAGES/appIcon/120.png) Livestream of Emoji Chat App
+## ![ScreenShot](https://github.com/marceadecker/GhostChat-iOS/blob/master/IMAGES/appIcon/80.png) Livestream of Emoji Chat App
 1. Tagline: "Stream of Emoji Consciousness Chat App" 
 2. Works in Airplane Mode
 3. Does not use the Internet. Secure and off the Cloud.  
